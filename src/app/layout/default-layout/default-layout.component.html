@@ -1,0 +1,50 @@
+<!-- LOADER -->
+<!-- <div id="preloader">
+  <div class="loader">
+    <img src="../assets/images/loader2.gif" alt="#" />
+  </div>
+</div> -->
+<!-- END LOADER -->
+<div class="wrapper">
+  <div id="wrapper">
+    <div class="overlay"></div>
+
+    <!-- Sidebar -->
+    <nav
+      class="navbar navbar-inverse fixed-top"
+      id="sidebar-wrapper"
+      role="navigation"
+    >
+      <ul class="nav sidebar-nav">
+        <div class="sidebar-header">
+          <div class="sidebar-brand">
+            <a href="#">Dev Work</a>
+          </div>
+        </div>
+        <li>
+          <a routerLink=""><i class="fas fa-home"></i>  Home</a>
+        </li>
+        <li>
+          <a routerLink="/about"><i class="fas fa-address-card"></i>  About</a>
+        </li>
+        <li>
+          <a routerLink="/service"><i class="fas fa-sign-in-alt"></i>  Service</a>
+        </li>
+        <li><a routerLink="/contact"><i class="fas fa-id-card-alt"></i>  Contact</a></li>
+        <li><a routerLink="/course"><i class="fas fa-book"></i>  Cousre</a></li>
+        <li><a routerLink="/info"><i class="fas fa-male"></i>  Profile</a></li>
+        <li><a routerLink="/login"><i class="fas fa-sign-in-alt"></i>  Login</a></li>
+        <li><a routerLink="/admin"><i class="fas fa-users-cog"></i>  Admin</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div id="content">
+    <!--start header-->
+    <app-header></app-header>
+    <!-- End header -->
+    <!--section-->
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
+  </div>
+</div>
